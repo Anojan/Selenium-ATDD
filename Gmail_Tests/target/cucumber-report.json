@@ -1,0 +1,305 @@
+[
+  {
+    "id": "login",
+    "description": "",
+    "name": "Login",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 8760441,
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.AfterMethod()"
+            }
+          }
+        ],
+        "id": "login;user-logs-into-the-gmail-account-using-valid-username-and-password",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 29594198917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.BeforeMethod()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "User logs into the gmail account using valid username and password",
+        "keyword": "Scenario",
+        "line": 4,
+        "steps": [
+          {
+            "result": {
+              "duration": 12121951431,
+              "status": "passed"
+            },
+            "name": "I am in the gmail account page",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "login.I_am_in_the_gmail_account_page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 602351854,
+              "status": "passed"
+            },
+            "name": "I enter the valid username as \"rtestuserlogin\"",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "rtestuserlogin",
+                  "offset": 31
+                }
+              ],
+              "location": "login.I_enter_the_valid_username_as(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 768807730,
+              "status": "passed"
+            },
+            "name": "I enter the valid password as \"rtestuser\"",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "val": "rtestuser",
+                  "offset": 31
+                }
+              ],
+              "location": "login.I_enter_the_valid_password_as(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 21375996321,
+              "status": "passed"
+            },
+            "name": "I click on the Sign in button",
+            "keyword": "And ",
+            "line": 8,
+            "match": {
+              "location": "login.I_click_on_the_Sign_in_button()"
+            }
+          },
+          {
+            "result": {
+              "duration": 15255080,
+              "status": "passed"
+            },
+            "name": "I should be able to login to my gmail account",
+            "keyword": "Then ",
+            "line": 9,
+            "match": {
+              "location": "login.I_should_be_able_to_login_to_my_gmail_account()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 9202154,
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.AfterMethod()"
+            }
+          }
+        ],
+        "id": "login;user-logs-out-of-the-gmail-account",
+        "tags": [
+          {
+            "name": "@Logout",
+            "line": 11
+          }
+        ],
+        "description": "",
+        "name": "User logs out of the gmail account",
+        "keyword": "Scenario",
+        "line": 12,
+        "steps": [
+          {
+            "result": {
+              "duration": 21822746,
+              "status": "passed"
+            },
+            "name": "I am logged into my gmail account",
+            "keyword": "Given ",
+            "line": 13,
+            "match": {
+              "location": "login.I_am_logged_into_my_gmail_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 116547850647,
+              "status": "passed"
+            },
+            "name": "I click on the sign out button",
+            "keyword": "When ",
+            "line": 14,
+            "match": {
+              "location": "login.I_click_on_the_sign_out_button()"
+            }
+          },
+          {
+            "result": {
+              "duration": 19465760,
+              "status": "passed"
+            },
+            "name": "I should be able to log out of my account",
+            "keyword": "Then ",
+            "line": 15,
+            "match": {
+              "location": "login.I_should_be_able_to_log_out_of_my_account()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "login.feature"
+  },
+  {
+    "id": "inbox-functionalities",
+    "tags": [
+      {
+        "name": "@MailBox",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Inbox Functionalities",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 7124248,
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.AfterMethod()"
+            }
+          }
+        ],
+        "id": "inbox-functionalities;user-composes-a-new-mail",
+        "before": [
+          {
+            "result": {
+              "duration": 36767970884,
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.BeforeMethod()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "User composes a new mail",
+        "keyword": "Scenario",
+        "line": 4,
+        "steps": [
+          {
+            "result": {
+              "duration": 30934110,
+              "status": "passed"
+            },
+            "name": "I am logged into my gmail account",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "login.I_am_logged_into_my_gmail_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 12168509308,
+              "status": "passed"
+            },
+            "name": "I click on the Compose button",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "location": "login.I_click_on_the_Compose_button()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2738750335,
+              "status": "passed"
+            },
+            "name": "I compose a mail",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "location": "login.I_compose_a_mail()"
+            }
+          },
+          {
+            "result": {
+              "duration": 120920373,
+              "status": "passed"
+            },
+            "name": "I close the composed mail",
+            "keyword": "And ",
+            "line": 8,
+            "match": {
+              "location": "login.I_close_the_composed_mail()"
+            }
+          },
+          {
+            "result": {
+              "duration": 421821957,
+              "status": "passed"
+            },
+            "name": "I navigate to drafts",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "login.I_navigate_to_drafts()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5975296449,
+              "status": "passed"
+            },
+            "name": "I should be able to see tha mail in the drafts folder",
+            "keyword": "Then ",
+            "line": 10,
+            "match": {
+              "location": "login.I_should_be_able_to_see_tha_mail_in_the_drafts_folder()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "mail.feature"
+  }
+]
